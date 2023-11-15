@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+	padding: 0px;
+	background-image: linear-gradient(var(--v1), var(--s1), var(--v1));
+	display: flex;
+	flex-direction: column;
+}
+form {
+    display: flex;
+	flex-direction: column;
+    text-align: center;
+	
+}
+h1{
+	text-align: center;
+
+}
+.q1{
+	margin-top: 60px;
+	display: flex;
+}
+.q1 a{
+	margin: auto;
+	text-decoration: none;
+	font-size: 2rem;
+}
+#yes{
+	--b: 0.1em;   /* the thickness of the line */
+  --c: #1095c1; /* the color */
+  margin-left: 360px; /* keeping the distance */
+  color: #0000;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+#yes:hover{
+	--_p: 100%;
+  --_s: .3s;
+}
+#no{
+		--b: 0.1em;   /* the thickness of the line */
+  --c: #1095c1; /* the color */
+  margin-left: 190px;
+  color: #0000;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+#no:hover{
+	--_p: 100%;
+  --_s: .3s;
+}
+:root {
+  --v1: #be91c6;
+  --v2: #8a65cc;
+  --v3: #5e30d9;
+  --transparentv3: #5e30d900;
+  --v4: #3b1895;
+  --s1: #fea798;
+  --s2: #ff846e;
+  --cloud: #fea798;
+}
+
+
+#quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    background-size: cover;
+	object-fit: cover; 
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-image: linear-gradient(var(--v1), var(--s1), var(--v1));
+	
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result-container {
+    margin-top: 20px;
+}
+
+
+
+
+
