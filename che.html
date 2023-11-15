@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="che.css">
+	<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2927/2927491.png">
+    <title>Water</title>
+</head>
+
+<body>						
+
+
+
+    <div id="quiz-container">
+
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the main source of your water?</p>
+                <label>
+                    <input type="radio" name="q1" value="rivers">Rivers
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="groundwater">Groundwater
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="london">Rainwater harvesting
+                </label>
+            </div>
+
+            <div class="question">
+                <p>2. How often is your filter cleaned?</p>
+                <label>
+                    <input type="radio" name="q2" value="time1">every month
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="time2">every 3-5 months 
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="time3">every year
+                </label>
+            </div>
+			<div class="question">
+                <p>3. How does your water taste?</p>
+                <label>
+                    <input type="radio" name="q3" value="notaste">No particular taste
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="mettalictaste">Mettalic 
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="bittertaste">Bitter
+                </label>
+            </div>
+			<div class="question">
+                <p>4. See your water against sunlight, how does it appear:</p>
+                <label>
+                    <input type="radio" name="q4" value="transparent">Transparent
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="tranculescent">Tranculescent  
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="opaque">Opaque
+                </label>
+            </div>
+			<div class="question">
+                <p>5. How often do you get your plumbing pipe checked?</p>
+                <label>
+                    <input type="radio" name="q5" value="yearly">Once a year
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="yearly2">Once every few years  
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="never">Never
+                </label>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result-container">
+            <p id="result-text"></p>
+        </div>
+		<div id="result-container2">
+            <p id="result-text2"></p>
+        </div>
+    </div>
+
+
+    <script src="che.js"></script>
+
+</body>
+
+</html>
